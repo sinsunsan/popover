@@ -2,11 +2,23 @@
     font-family: "InterstateBlack";
     font-style: normal;
     font-weight: normal;
-    src: url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.eot?#iefix") 
-    format("embedded-opentype"), 
+    src: url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.eot");
+    src: url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.eot?#iefix") format("embedded-opentype"), 
     url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.woff") format("woff"), 
     url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.ttf") format("truetype"), 
     url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.svg#InterstateBlackRegular") format("svg");
+}
+
+@font-face {
+   font-family: 'SabonLTStdBoldItalic';
+   src: url('../fonts/sabon/sabonltstd-bolditalic-webfont.eot');
+   src: url('../fonts/sabon/sabonltstd-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sabon/sabonltstd-bolditalic-webfont.woff') format('woff'),
+        url('../fonts/sabon/sabonltstd-bolditalic-webfont.ttf') format('truetype'),
+        url('../fonts/sabon/sabonltstd-bolditalic-webfont.svg#SabonLTStdBoldItalic') format('svg');
+   font-weight: normal;
+   font-style: normal;
+
 }
 
 html, body {
@@ -22,7 +34,7 @@ h2 {
 	margin: 10px 0 15px 0;
 }
 #overlay {
-	/*background: #000;
+	background: #000;
 	height: 100%;
 	left: 0;
 	opacity: 0.5;
@@ -34,7 +46,7 @@ h2 {
 	-moz-opacity: 0.5;
 	opacity:.50;
 	filter: alpha(opacity=50);
-	*/
+	
 }
 #coupe {
 	top: 50%;
@@ -42,6 +54,7 @@ h2 {
 	margin-left: -490px;
 	margin-top: -320px;
 	position: absolute;
+	z-index: 9999;
 }
 #popover {
 
@@ -70,8 +83,11 @@ h2 {
 	font-family: InterstateBlack, 'Arial Black', Arial, Helvetica;
 	font-size: 15px;
 	font-weight: normal;
-	letter-spacing: -2px;
 	margin: 10px 0 10px 0;
+}
+#pop-right .newsletter h2,
+#pop-right .twitter h2 {
+	margin-top: 0;
 }
 #pop-right {
 	/*background: #EEE;*/
@@ -86,6 +102,9 @@ h2 {
 .facebook h2 em {
 	color: #3b5998;
 }
+.widget fieldset {
+	height: 45px;
+}
 #pop-left {
 	/*background: #CCC;*/
 	color: black;
@@ -97,11 +116,13 @@ h2 {
 	/* Add font interstate */
 	font-size: 39px;
 	font-weight: normal;
+	letter-spacing: -3px;
 	line-height: 32px;
 	font-family: InterstateBlack, 'Arial Black', Arial, Helvetica;
 }
 #pop-left p {
 	margin-top: 20px;
+	width: 230px;
 }
 .closecross {
 	position: absolute;
@@ -123,7 +144,7 @@ h2 {
 }
 
 .newsletter .widget form input.submit {
-	/*
+	
 	background: #2E2F33;
 	border: none;
 	color: white;
@@ -132,6 +153,7 @@ h2 {
 	line-height: 23px;
 	height: 23px;
 	text-align: center;
+
 	position: relative;
 	top: -27px;
 	left: 175px;
@@ -141,7 +163,10 @@ h2 {
   -moz-border-radius: 5px / 2px;
   -khtml-border-radius: 5px / 5px;
   border-radius: 5px / 5px;
-  */
+  
+}
+.newsletter h2 {
+	margin-top: 0;
 }
 .newsletter input#EMAIL_FIELD {
   padding: 5px;
