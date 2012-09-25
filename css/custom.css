@@ -1,3 +1,154 @@
-#popover {
-	width: 506 px;
+@font-face {
+    font-family: "InterstateBlack";
+    font-style: normal;
+    font-weight: normal;
+    src: url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.woff") format("woff"), 
+    url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.ttf") format("truetype"), 
+    url("http://www.rue89.com/sites/all/themes/rue89base/css/fonts/interstate-black-webfont.svg#InterstateBlackRegular") format("svg");
 }
+
+html, body {
+	height: 100%;
+}
+body {
+	background: #EEE;
+}
+em {
+	font-style: normal;
+}
+h2 {
+	margin: 10px 0 15px 0;
+}
+#overlay {
+	/*background: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9998;
+
+	-moz-opacity: 0.5;
+	opacity:.50;
+	filter: alpha(opacity=50);
+	*/
+}
+#coupe {
+	top: 50%;
+	left: 50%;
+	margin-left: -490px;
+	margin-top: -320px;
+	position: absolute;
+}
+#popover {
+
+	font: normal normal 15px/20px arial ;
+	background: #FFF;
+	overflow: visible;
+	padding: 12px 22px;
+	width: 506px;
+	z-index: 9999;
+
+	height: 275px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -253px ;
+	margin-top: -150px;
+	background:;
+}
+#pop-right, #pop-left {
+	float: left;
+	height: 100%;
+	overflow: hidden;
+}
+#pop-right h2 {
+	font-family: InterstateBlack, 'Arial Black', Arial, Helvetica;
+	font-size: 15px;
+	font-weight: normal;
+	letter-spacing: -2px;
+	margin: 10px 0 10px 0;
+}
+#pop-right {
+	/*background: #EEE;*/
+	width: 231px;
+}
+.newsletter h2 em {
+	color: red;
+}
+.twitter h2 em {
+	color: #25c5fd;
+}
+.facebook h2 em {
+	color: #3b5998;
+}
+#pop-left {
+	/*background: #CCC;*/
+	color: black;
+	padding-right: 12px;
+	width: 252px;
+}
+#pop-left h2 {
+	color: black;
+	/* Add font interstate */
+	font-size: 39px;
+	font-weight: normal;
+	line-height: 32px;
+	font-family: InterstateBlack, 'Arial Black', Arial, Helvetica;
+}
+#pop-left p {
+	margin-top: 20px;
+}
+.closecross {
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+#pop-left h2 em{
+	color: red;
+}	
+#pop-left p {
+	font: normal normal 15px/20px arial ;
+}
+#pop-left p em {
+	font-weight: bold;
+}
+
+.newsletter .widget {
+  margin-top: 10px;
+}
+
+.newsletter .widget form input.submit {
+	/*
+	background: #2E2F33;
+	border: none;
+	color: white;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 23px;
+	height: 23px;
+	text-align: center;
+	position: relative;
+	top: -27px;
+	left: 175px;
+	width: 28px;
+
+  -webkit-border-radius: 2px 2px;
+  -moz-border-radius: 5px / 2px;
+  -khtml-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  */
+}
+.newsletter input#EMAIL_FIELD {
+  padding: 5px;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  -khtml-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+}
+
+

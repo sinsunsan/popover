@@ -18,23 +18,69 @@
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
     <body>
+      <div id="overlay">
+      </div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=260452147317184";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <div id="coupe">
+          <img src="img/coupe.png" >
+        </div>
         <div id="popover">
-          <div id="pop-left">
-
+           
+          <div id="pop-left" class="pop-pane">
+              <h2>AND THE WINNER IS... <em>NOUS!</em></h2>
+              <p><em>Rue89 a gagné</em> le prix du meilleur site d'information non-anglophone des Online Journalism Awards 2012, aux Etats-Unis</p>
           </div>
           <div id="pop-right">
+            <div class="newsletter" class="pop-pane">
+              <h2>LA <em>NEWSLETTER</em></h2>
+              Chaque jour à 14h,<br> Rue89 dans votre boîte.
+              <div class="widget">
+                <form name="emvForm" id="emvForm" action="http://p3trc.emv2.com/D2UTF8" method="POST" target="_top">
+                  <fieldset>
+                    <input type="hidden" name="emv_tag" value="E0F08CFC6C02E0F0">
+                    <input type="hidden" name="emv_ref" value="EdX7CqkmjRzC8SA9MOPQI0WiKDp6FN61iT6ue6tDWLbZKPY">
+                    <input type="text" id="EMAIL_FIELD" placeholder="Votre email" name="EMAIL_FIELD" class="tf clearfocus rounded3" maxlength="64">
+                    <input type="hidden" id="NEWSLETTER_DAILY_ABO_FIELD" name="NEWSLETTER_DAILY_ABO_FIELD" value="1">
+                    <input type="button" class="rounded3 submit" value="OK" onclick="javascript:validForm();">
+                 </fieldset>
+               </form>
+              </div>    
+            </div>
+
+            <div class="twitter">
+              <h2>SUR <em>TWITTER</em></h2>
+              <div class="widget">
+                <a href="https://twitter.com/rue89" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-size="large">Suivre @rue89</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div> 
+            </div>
+
+            <div class="facebook">
+              <h2>SUR <em>FACEBOOK</em></h2>
+              <div class="widget">
+                <div class="fb-like" data-href="https://www.facebook.com/Rue89" data-send="false" data-width="450" data-show-faces="false"></div>
+              </div>               
+            </div>
           </div>
-        </div>
+          <div class="closecross"><img src="img/closecross.png"</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
     </body>
 </html>
