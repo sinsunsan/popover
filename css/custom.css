@@ -141,8 +141,10 @@ h2 {
 
 .newsletter .widget {
   margin-top: 10px;
-  width: 280px;
 }
+.newsletter .widget form {
+  position: relative;
+}  
 .newsletter .widget form input.submit {
 	
 	background: #2E2F33;
@@ -155,10 +157,11 @@ h2 {
 	text-align: center;
 
   
-	position: relative;
-	left: -35px;
+	position: absolute;
+  right: 35px;
+	top: 5px;
 	width: 28px;
-  */
+ 
   -webkit-border-radius: 2px 2px;
   -moz-border-radius: 5px / 2px;
   -khtml-border-radius: 5px / 5px;
@@ -169,7 +172,7 @@ h2 {
 	margin-top: 0;
 }
 .newsletter input#EMAIL_FIELD {
-  padding: 5px;
+  padding: 5px 30px 5px 5px;
   -webkit-border-radius: 5px 5px;
   -moz-border-radius: 5px / 5px;
   -khtml-border-radius: 5px / 5px;
