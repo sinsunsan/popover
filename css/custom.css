@@ -83,7 +83,7 @@ h2 {
 	font-family: InterstateBlack, 'Arial Black', Arial, Helvetica;
 	font-size: 15px;
 	font-weight: normal;
-	margin: 10px 0 10px 0;
+	margin: 10px 0 5px 0;
 }
 #pop-right .newsletter h2,
 #pop-right .twitter h2 {
@@ -140,7 +140,7 @@ h2 {
 }
 
 .newsletter .widget {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .newsletter .widget form {
   position: relative;
@@ -171,6 +171,12 @@ h2 {
 .newsletter h2 {
 	margin-top: 0;
 }
+#pop-right .facebook h2 {
+  margin-bottom: 0;
+} 
+#pop-right .twitter h2 {
+  margin-bottom: 10px;
+} 
 .newsletter input#EMAIL_FIELD {
   padding: 5px 30px 5px 5px;
   -webkit-border-radius: 5px 5px;
