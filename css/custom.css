@@ -25,6 +25,7 @@ html, body {
 	height: 100%;
 }
 body {
+  background: #EEE;
 }
 em {
 	font-style: normal;
@@ -110,6 +111,11 @@ h2 {
 	padding-right: 12px;
 	width: 252px;
 }
+#pop-left img {
+  left: -9px;
+  position: relative;
+  top: 1px;
+}
 #pop-left h2 {
 	color: black;
 	/* Add font interstate */
@@ -173,6 +179,10 @@ h2 {
 #pop-right .facebook h2 {
   margin-bottom: 0;
 } 
+#pop-right .facebook {
+  left: -6px;
+  position: relative;
+}
 #pop-right .twitter h2 {
   margin-bottom: 10px;
 } 
