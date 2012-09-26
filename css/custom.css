@@ -57,9 +57,8 @@ h2 {
 	z-index: 9999;
 }
 #popover {
-
 	font: normal normal 15px/20px arial ;
-	background: #FFF;
+	background: #FFFFFF;
 	overflow: visible;
 	padding: 12px 22px;
 	width: 506px;
@@ -67,12 +66,13 @@ h2 {
 
 	height: 275px;
 	margin: auto;
+  
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -253px ;
+	margin-left: -275px ;
 	margin-top: -150px;
-	background:;
+  
 }
 #pop-right, #pop-left {
 	float: left;
